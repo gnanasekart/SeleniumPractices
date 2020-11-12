@@ -31,10 +31,7 @@ public class ExtentReportdemo extends Screenshot
 	public void startTest()
 	{
 		report = new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReport.html", true);
-
 		report.addSystemInfo("user Name", "Demo report");
-
-		
 	}
 
 	@BeforeTest
@@ -94,7 +91,7 @@ public class ExtentReportdemo extends Screenshot
 		}
 		else if(result.getStatus()==ITestResult.SUCCESS)
 		{
-			test.log(LogStatus.PASS, "Test case is Passed" +result.getName());
+			test.log(LogStatus.PASS, "Test case is Passed " +result.getName());
 		}
 	}
 	
@@ -105,5 +102,4 @@ public class ExtentReportdemo extends Screenshot
 		report.flush();
 		driver.quit();
 	}
-
 }
