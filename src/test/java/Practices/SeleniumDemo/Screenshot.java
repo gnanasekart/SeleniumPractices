@@ -3,6 +3,7 @@ package Practices.SeleniumDemo;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -50,7 +51,7 @@ public class Screenshot
 		driver.get("https://www.google.co.in");
 	}
 	
-	public static void exClickOn(WebDriver driver, int timeout, WebElement locator)
+	public static void exClickOn(WebDriver driver, Duration timeout, WebElement locator)
 	{
 		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
 		.until(ExpectedConditions.elementToBeClickable(locator));
