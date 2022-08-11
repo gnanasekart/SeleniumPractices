@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10389" started-at="2022-08-06T17:19:11 IST" finished-at="2022-08-06T17:19:21 IST">
+  <suite name="Default suite" duration-ms="38881" started-at="2022-08-10T21:29:27 IST" finished-at="2022-08-10T21:30:06 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10389" started-at="2022-08-06T17:19:11 IST" finished-at="2022-08-06T17:19:21 IST">
-      <class name="Practices.SeleniumDemo.sampleRUnselenium">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:Practices.SeleniumDemo.sampleRUnselenium@7cbd213e]" name="startUp" duration-ms="10329" started-at="2022-08-06T17:19:11 IST" finished-at="2022-08-06T17:19:21 IST">
+    <test name="Default test" duration-ms="38881" started-at="2022-08-10T21:29:27 IST" finished-at="2022-08-10T21:30:06 IST">
+      <class name="DesignPatterns.WebDriver_Factory">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:DesignPatterns.WebDriver_Factory@7a30d1e6]" name="LaunchBrowser" duration-ms="38806" started-at="2022-08-10T21:29:27 IST" finished-at="2022-08-10T21:30:06 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startUp -->
-      </class> <!-- Practices.SeleniumDemo.sampleRUnselenium -->
+        </test-method> <!-- LaunchBrowser -->
+      </class> <!-- DesignPatterns.WebDriver_Factory -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
