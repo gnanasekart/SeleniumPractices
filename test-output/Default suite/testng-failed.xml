@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumConcept.ActionsClass">
+      <class name="SeleniumConcept.HyperLinkTest">
         <methods>
-          <include name="ActionsClass"/>
-          <include name="tearDown"/>
-          <include name="startUp"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="duplicateLink"/>
         </methods>
-      </class> <!-- SeleniumConcept.ActionsClass -->
+      </class> <!-- SeleniumConcept.HyperLinkTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38881" started-at="2022-08-10T21:29:27 IST" finished-at="2022-08-10T21:30:06 IST">
+  <suite name="Default suite" duration-ms="34744" started-at="2022-08-15T21:56:03 IST" finished-at="2022-08-15T21:56:38 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38881" started-at="2022-08-10T21:29:27 IST" finished-at="2022-08-10T21:30:06 IST">
-      <class name="DesignPatterns.WebDriver_Factory">
-        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:DesignPatterns.WebDriver_Factory@7a30d1e6]" name="LaunchBrowser" duration-ms="38806" started-at="2022-08-10T21:29:27 IST" finished-at="2022-08-10T21:30:06 IST">
+    <test name="Default test" duration-ms="34744" started-at="2022-08-15T21:56:03 IST" finished-at="2022-08-15T21:56:38 IST">
+      <class name="SeleniumConcept.HyperLinkTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SeleniumConcept.HyperLinkTest@646007f4]" name="beforeMethod" is-config="true" duration-ms="34445" started-at="2022-08-15T21:56:03 IST" finished-at="2022-08-15T21:56:38 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LaunchBrowser -->
-      </class> <!-- DesignPatterns.WebDriver_Factory -->
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="totalLink()[pri:0, instance:SeleniumConcept.HyperLinkTest@646007f4]" name="totalLink" duration-ms="130" started-at="2022-08-15T21:56:38 IST" finished-at="2022-08-15T21:56:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- totalLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SeleniumConcept.HyperLinkTest@646007f4]" name="afterMethod" is-config="true" duration-ms="121" started-at="2022-08-15T21:56:38 IST" finished-at="2022-08-15T21:56:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- SeleniumConcept.HyperLinkTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
