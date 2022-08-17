@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ActionsClass extends WebDriverServiceImpl {
+public class AlertClass extends WebDriverServiceImpl {
 
 	public static WebDriver driver;
 	public static Actions action;

@@ -52,6 +52,17 @@ public class HyperLinkTest {
 		int aTagLinkCount = driver.findElements(By.xpath("//a[contains(@href, 'html')]")).size();
 		System.out.println("total html links = "+htmlCount+", and which include <a> tag links are = "+aTagLinkCount);
 	}
+	
+	@Test
+	public void totaLayoutlLink() {
+		driver.findElement(By.linkText("How many links in this layout?")).click();
+		
+		//boolean ele = driver.findElement(By.tagName("a")).getAttribute("href");
+		
+		int htmlCount = driver.findElements(By.xpath("//*[contains(@href, 'html')]")).size();
+		int aTagLinkCount = driver.findElements(By.xpath("//a[contains(@href, 'html')]")).size();
+		System.out.println("total html links = "+htmlCount+", and which include <a> tag links are = "+aTagLinkCount);
+	}
 	//
 
 	@AfterMethod
