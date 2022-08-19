@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumConcept.Windows">
+      <class name="SeleniumConcept.SampleBab">
         <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="example3"/>
+          <include name="highLight"/>
         </methods>
-      </class> <!-- SeleniumConcept.Windows -->
+      </class> <!-- SeleniumConcept.SampleBab -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
