@@ -34,7 +34,7 @@ public class ExplicitWaitTest {
 	//@Test
 	public void waitForVisibility() {
 		String clickbutton = "(//div[@class='card']/h5[contains(text(),'Wait for Visibility')]//following::span[text()='Click'])[1]";
-		driver.findElement(By.xpath(clickbutton)).click();
+		driver.findElement(By.xpath(clickbutton));
 
 		String hereButton = "(//div[@class='card']/h5[contains(text(),'Wait for Visibility')]//following::span[text()='I am here'])";
 
