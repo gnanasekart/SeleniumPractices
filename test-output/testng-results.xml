@@ -1,111 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="29" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
+  <suite started-at="2022-09-08T19:39:08 IST" name="Default suite" finished-at="2022-09-08T19:39:59 IST" duration-ms="50983">
     <groups>
     </groups>
-    <test name="Test" duration-ms="29" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-      <class name="TestNG.TestAnnotations2">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestNG.TestAnnotations2@44f75083]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
+    <test started-at="2022-09-08T19:39:08 IST" name="Default test" finished-at="2022-09-08T19:39:59 IST" duration-ms="50983">
+      <class name="TL_Selenium_Practice.Flipkart">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TL_Selenium_Practice.Flipkart@23c30a20]" started-at="2022-09-08T19:39:08 IST" name="setup" finished-at="2022-09-08T19:39:21 IST" duration-ms="12586" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TestNG.TestAnnotations2@44f75083]" name="beforeClass" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
+        </test-method> <!-- setup -->
+        <test-method signature="flipkartsort()[pri:0, instance:TL_Selenium_Practice.Flipkart@23c30a20]" started-at="2022-09-08T19:39:21 IST" name="flipkartsort" finished-at="2022-09-08T19:39:59 IST" duration-ms="38377" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestNG.TestAnnotations2@44f75083]" name="beforeTest" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNG.TestAnnotations2@44f75083]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNG.TestAnnotations2@44f75083]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f2()[pri:0, instance:TestNG.TestAnnotations2@44f75083]" name="f2" duration-ms="15" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f2 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNG.TestAnnotations2@44f75083]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f1()[pri:0, instance:TestNG.TestAnnotations2@44f75083]" name="f1" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f1 -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestNG.TestAnnotations2@44f75083]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNG.TestAnnotations2@44f75083]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNG.TestAnnotations2@44f75083]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestNG.TestAnnotations2@44f75083]" name="afterSuite" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- TestNG.TestAnnotations2 -->
-      <class name="TestNG.TestAnnotations">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestNG.TestAnnotations@1d7acb34]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestNG.TestAnnotations@1d7acb34]" name="beforeTest" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f1()[pri:0, instance:TestNG.TestAnnotations@1d7acb34]" name="f1" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f1 -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestNG.TestAnnotations@1d7acb34]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNG.TestAnnotations@1d7acb34]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNG.TestAnnotations@1d7acb34]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="f2()[pri:0, instance:TestNG.TestAnnotations@1d7acb34]" name="f2" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f2 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNG.TestAnnotations@1d7acb34]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TestNG.TestAnnotations@1d7acb34]" name="beforeClass" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNG.TestAnnotations@1d7acb34]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNG.TestAnnotations@1d7acb34]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestNG.TestAnnotations@1d7acb34]" name="afterSuite" is-config="true" duration-ms="0" started-at="2022-08-21T14:55:42 IST" finished-at="2022-08-21T14:55:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- TestNG.TestAnnotations -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- flipkartsort -->
+      </class> <!-- TL_Selenium_Practice.Flipkart -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
