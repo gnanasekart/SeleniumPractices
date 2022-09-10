@@ -39,7 +39,9 @@ public class TestBase {
 		{
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--disable-popup-blocking", "disable-extensions", "start-maximized", "--log-level=3");
+			options.addArguments("--incognito", "start-maximized", "--log-level=3");
+			options.addArguments("disable-infobars", "--disable-popup-blocking", "disable-extensions");
+			options.addArguments("--headless", "--disable-gpu");
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, false);
 			cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, false);
@@ -72,7 +74,7 @@ public class TestBase {
 			driver = new InternetExplorerDriver();
 		}
 		//driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.manage().deleteAllCookies();
 		driver.get(URL);

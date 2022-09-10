@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TL_Selenium_Practice.Flipkart">
+      <class name="TL_Selenium_Practice.Lenskart">
         <methods>
-          <include name="flipkartsort"/>
-          <include name="setup"/>
+          <include name="lens"/>
+          <include name="teardown"/>
+          <include name="startup"/>
         </methods>
-      </class> <!-- TL_Selenium_Practice.Flipkart -->
+      </class> <!-- TL_Selenium_Practice.Lenskart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

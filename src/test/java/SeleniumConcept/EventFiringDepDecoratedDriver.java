@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SampleBab extends WebDriverDecorator {
+public class EventFiringDepDecoratedDriver extends WebDriverDecorator {
 
 	//EventFiringWebDriver
 	int i=0;
@@ -30,8 +30,7 @@ public class SampleBab extends WebDriverDecorator {
 		driver = new ChromeDriver();
 
 		//convert driver into decorator driver
-		WebDriver decoratorDriver = new SampleBab().decorate(driver);
-
+		WebDriver decoratorDriver = new EventFiringDepDecoratedDriver().decorate(driver);
 		decoratorDriver.get("http://leaftaps.com/opentaps");
 		WebElement ele = decoratorDriver.findElement(By.id("username"));
 		ele.sendKeys("Democsr");
