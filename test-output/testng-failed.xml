@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium4.ElementScreenShot">
+      <class name="selenium4.EmulationClass">
         <methods>
           <include name="beforeTest"/>
-          <include name="elementSS"/>
+          <include name="example1"/>
         </methods>
-      </class> <!-- selenium4.ElementScreenShot -->
+      </class> <!-- selenium4.EmulationClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
