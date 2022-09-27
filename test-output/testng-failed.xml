@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TL_Selenium_Practice.Lenskart">
+      <class name="selenium4.ElementScreenShot">
         <methods>
-          <include name="lens"/>
-          <include name="teardown"/>
-          <include name="startup"/>
+          <include name="beforeTest"/>
+          <include name="elementSS"/>
         </methods>
-      </class> <!-- TL_Selenium_Practice.Lenskart -->
+      </class> <!-- selenium4.ElementScreenShot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
