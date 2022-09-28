@@ -1,6 +1,8 @@
 package selenium4;
 
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 
 import org.openqa.selenium.By;
@@ -25,8 +27,8 @@ public class EmulationClass {
 		driver.manage().deleteAllCookies();
 	}
 	
-	@Test
-	public void example1() {	
+	//@Test
+	public void seleniumCommand() {	
 		DevTools devtool = driver.getDevTools();
 		devtool.createSession();
 		
@@ -37,7 +39,26 @@ public class EmulationClass {
 		driver.findElement(By.className("decorativeSubmit")).click();
 		driver.findElement(By.xpath("//div[@for='crmsfa']")).click();
 		driver.findElement(By.linkText("Create Lead")).click();
+	}
 	
+	@Test
+	public void executeCDPcmd() {
+		DevTools devtool = driver.getDevTools();
+		devtool.createSession();
+		
+		Map<String, Object> map = new HashMap<>();
+		map.put("width", 360);
+		map.put("height", 640);
+		map.put("deviceScaleFactor", 50);
+		map.put("mobile", true);
+		
+		driver.executeCdpCommand("Emulation.setDeviceMetricsOverride", map);
+		driver.get("http://leaftaps.com/opentaps/control/main");
+		driver.findElement(By.id("username")).sendKeys("democsr");
+		driver.findElement(By.id("password")).sendKeys("crmsfa");
+		driver.findElement(By.className("decorativeSubmit")).click();
+		driver.findElement(By.xpath("//div[@for='crmsfa']")).click();
+		driver.findElement(By.linkText("Create Lead")).click();
 	}
 	
 	@AfterMethod

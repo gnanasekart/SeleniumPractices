@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-27T21:57:39 IST" name="Default suite" finished-at="2022-09-27T21:58:10 IST" duration-ms="31078">
+  <suite started-at="2022-09-28T05:26:00 IST" name="Default suite" finished-at="2022-09-28T05:26:18 IST" duration-ms="18112">
     <groups>
     </groups>
-    <test started-at="2022-09-27T21:57:39 IST" name="Default test" finished-at="2022-09-27T21:58:10 IST" duration-ms="31078">
+    <test started-at="2022-09-28T05:26:00 IST" name="Default test" finished-at="2022-09-28T05:26:18 IST" duration-ms="18112">
       <class name="selenium4.EmulationClass">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:selenium4.EmulationClass@79924b]" started-at="2022-09-27T21:57:39 IST" name="beforeTest" finished-at="2022-09-27T21:57:45 IST" duration-ms="5668" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:selenium4.EmulationClass@7b9a4292]" started-at="2022-09-28T05:26:00 IST" name="beforeTest" finished-at="2022-09-28T05:26:07 IST" duration-ms="7088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="example1()[pri:0, instance:selenium4.EmulationClass@79924b]" started-at="2022-09-27T21:57:45 IST" name="example1" finished-at="2022-09-27T21:58:10 IST" duration-ms="25022" status="PASS">
+        <test-method signature="executeCDPcmd()[pri:0, instance:selenium4.EmulationClass@7b9a4292]" started-at="2022-09-28T05:26:07 IST" name="executeCDPcmd" finished-at="2022-09-28T05:26:18 IST" duration-ms="10770" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- example1 -->
-        <test-method is-config="true" signature="teradown()[pri:0, instance:selenium4.EmulationClass@79924b]" started-at="2022-09-27T21:58:10 IST" name="teradown" finished-at="2022-09-27T21:58:10 IST" duration-ms="344" status="PASS">
+        </test-method> <!-- executeCDPcmd -->
+        <test-method is-config="true" signature="teradown()[pri:0, instance:selenium4.EmulationClass@7b9a4292]" started-at="2022-09-28T05:26:18 IST" name="teradown" finished-at="2022-09-28T05:26:18 IST" duration-ms="209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teradown -->
