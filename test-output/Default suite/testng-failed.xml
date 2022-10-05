@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium4.EmulationClass">
+      <class name="grid.RemoteConnectionEdge">
         <methods>
-          <include name="beforeTest"/>
-          <include name="example1"/>
+          <include name="mainChrome"/>
         </methods>
-      </class> <!-- selenium4.EmulationClass -->
+      </class> <!-- grid.RemoteConnectionEdge -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
