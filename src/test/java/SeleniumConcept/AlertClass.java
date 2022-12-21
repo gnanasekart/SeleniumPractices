@@ -5,6 +5,7 @@ import java.time.Duration;
 import Selenium.WebDriverServiceImpl;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -26,24 +27,24 @@ public class AlertClass extends WebDriverServiceImpl {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.manage().deleteAllCookies();
-		driver.get("https://leafground.com/alert.xhtml");
-		//driver.get("http://www.leafground.com/dashboard.xhtml");
-		//WebElement global = driver.findElement(By.cssSelector(".pi.pi-globe.layout-menuitem-icon"));
-		//WebElement alerttxt = driver.findElement(By.xpath("//span[text()='Alert']"));
-		//action.moveToElement(global).click().moveToElement(alerttxt).click().build().perform();
+		//driver.get("https://leafground.com/alert.xhtml");
+		driver.get("http://www.leafground.com/dashboard.xhtml");
+		WebElement global = driver.findElement(By.cssSelector(".pi.pi-globe.layout-menuitem-icon"));
+		WebElement alerttxt = driver.findElement(By.xpath("//span[text()='Alert']"));
+		action.moveToElement(global).click().moveToElement(alerttxt).click().build().perform();
 	}
 
 	@Test
 	public void ActionsClass() {
 		action = new Actions(driver);
 		//Accept Alert box
-		//actionSimpleDialogAccept();
+		actionSimpleDialogAccept();
 
 		//Send prompt msg
 		//actionPromptDialogOk();
 		//actionPromptDialogCancel();
 
-		actionConfirmDialogOk();
+		//actionConfirmDialogOk();
 	}
 
 	private void actionSimpleDialogAccept() {

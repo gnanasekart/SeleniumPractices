@@ -28,13 +28,14 @@ public class Version4 {
 	@Test
 	public void relativeLocator() {
 		//WebElement ele = driver.findElement(By.xpath("//label[@for='username']"));
-//		//driver.findElement(By.id("username")).sendKeys("democsr");
+		WebElement ele = driver.findElement(By.id("username"));
+		driver.findElement(By.id("username")).sendKeys("democsr");
 		WebElement name = driver.findElement(with(By.tagName("input")).toRightOf(By.xpath("//label[@for='username']")));
 		System.out.println("Text = "+name.getAttribute("id"));
-//		driver.findElement(By.id("password")).sendKeys("crmsfa");
-//		driver.findElement(By.className("decorativeSubmit")).click();
-//		driver.findElement(By.xpath("//div[@for='crmsfa']")).click();
-//		driver.findElement(By.linkText("Create Lead")).click();
+		driver.findElement(By.id("password")).sendKeys("crmsfa");
+		driver.findElement(By.className("decorativeSubmit")).click();
+		driver.findElement(By.xpath("//div[@for='crmsfa']")).click();
+		driver.findElement(By.linkText("Create Lead")).click();
 		
 		//driver.findElement(with(By.xpath(null)))
 		

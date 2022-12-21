@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="grid.RemoteConnectionEdge">
+      <class name="SeleniumConcept.AlertClass">
         <methods>
-          <include name="mainChrome"/>
+          <include name="startUp"/>
+          <include name="ActionsClass"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- grid.RemoteConnectionEdge -->
+      </class> <!-- SeleniumConcept.AlertClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
