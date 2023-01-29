@@ -31,11 +31,8 @@ public class AlertClass extends WebDriverServiceImpl {
 		driver.get("http://www.leafground.com/dashboard.xhtml");
 		WebElement global = driver.findElement(By.cssSelector(".pi.pi-globe.layout-menuitem-icon"));
 		WebElement alerttxt = driver.findElement(By.xpath("//span[text()='Alert']"));
-<<<<<<< HEAD
 		action.moveToElement(global).click().moveToElement(alerttxt).click().build().perform();
-=======
 		//action.moveToElement(global).click().moveToElement(alerttxt).click().build().perform();
->>>>>>> 20782e5b2471c6ca23b25e2573316ed7387ae2ca
 	}
 
 	@Test
