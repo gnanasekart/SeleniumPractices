@@ -25,14 +25,16 @@ public class AlertClass extends WebDriverServiceImpl {
 		WebDriverManager.chromiumdriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(20));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		driver.manage().deleteAllCookies();
-		//driver.get("https://leafground.com/alert.xhtml");
-		driver.get("http://www.leafground.com/dashboard.xhtml");
+		
+		driver.get("https://leafground.com/alert.xhtml");
+		//driver.get("http://www.leafground.com/dashboard.xhtml");
 		WebElement global = driver.findElement(By.cssSelector(".pi.pi-globe.layout-menuitem-icon"));
 		WebElement alerttxt = driver.findElement(By.xpath("//span[text()='Alert']"));
 		action.moveToElement(global).click().moveToElement(alerttxt).click().build().perform();
-		//action.moveToElement(global).click().moveToElement(alerttxt).click().build().perform();
 	}
 
 	@Test
@@ -50,7 +52,7 @@ public class AlertClass extends WebDriverServiceImpl {
 
 	private void actionSimpleDialogAccept() {
 		//click("(//h5[text()=' Alert (Simple Dialog)']//following::span[text()='Show'][1])");
-		//driver.findElement(By.xpath("(//h5[text()=' Alert (Simple Dialog)']//following::span[text()='Show'][1])")).click();
+		driver.findElement(By.xpath("(//h5[text()=' Alert (Simple Dialog)']//following::span[text()='Show'][1])")).click();
 		driver.switchTo().alert().accept();
 		String txt = driver.findElement(By.id("simple_result")).getText();
 		Assert.assertEquals(txt, "You have successfully clicked an alert");
@@ -89,6 +91,6 @@ public class AlertClass extends WebDriverServiceImpl {
 
 	@AfterMethod
 	public void tearDown() {
-		driver.close();
+		driver.quit();
 	}
 }

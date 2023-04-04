@@ -21,50 +21,75 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class EventFiringDepDecoratedDriver extends WebDriverDecorator {
 
-	//EventFiringWebDriver
-	int i=0;
-	WebDriver driver;
-	@Test
-	public void highLight() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+    //EventFiringWebDriver
+    int i = 0;
+    WebDriver driver;
 
-		//convert driver into decorator driver
-		WebDriver decoratorDriver = new EventFiringDepDecoratedDriver().decorate(driver);
-		decoratorDriver.get("http://leaftaps.com/opentaps");
-		WebElement ele = decoratorDriver.findElement(By.id("username"));
-		ele.sendKeys("Democsr");
-	}
+    @Test
+    public void highLight() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
 
-	public void beforeCall(Decorated<?> target, Method method, Object[] args) {
-		System.out.println("Before calling actions "+method.getName());
-	}
+        //convert driver into decorator driver
+        WebDriver decoratorDriver = new EventFiringDepDecoratedDriver().decorate(driver);
+        decoratorDriver.get("http://leaftaps.com/opentaps");
+        WebElement ele = decoratorDriver.findElement(By.id("username"));
+        ele.sendKeys("Democsr");
+    }
 
-	@Override
-	public void afterCall(Decorated<?> target, Method method, Object[] args, Object res) {
-		System.out.println("After calling actions "+method.getName());
+    public void beforeCall(Decorated<?> target, Method method, Object[] args) {
+        System.out.println("Before calling actions " + method.getName());
+    }
 
-		if(method.getName().equals("findElement")) {
-			System.out.println("Highlight the element is "+((WebElement)res).getTagName());
+    @Override
+    public void afterCall(Decorated<?> target, Method method, Object[] args, Object res) {
+        System.out.println("After calling actions " + method.getName());
 
-			//Here how to do Highlight for the tag ?
-			//1. Need to use JavaScriptExecutor
-			//2. For that we need WebDriver instance.
-			//How to get the webdriver instance inside this decorator override method
+        if (method.getName().equals("findElement")) {
+            System.out.println("Highlight the element is " + ((WebElement) res).getTagName());
 
-			//Here we got the webdriver instance from geDecorator
-			WebDriver driver = target.getDecorator().getDecoratedDriver().getOriginal();
+            //Here how to do Highlight for the tag ?
+            //1. Need to use JavaScriptExecutor
+            //2. For that we need WebDriver instance.
+            //How to get the webdriver instance inside this decorator override method
 
-			//Now jumping into another interface(JavaScriptExecutor) from WebDriver(Interface)
-			((JavascriptExecutor)driver).executeScript("arguments[0].setAttribute('style', "+"'background: yellow')", ((WebElement)res));
-			
-			File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			try {
-				FileUtils.copyFile(file, new File("./snaps/snap"+i+".jpg"));
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			i++;
-		}
-	}
+            //Here we got the webdriver instance from geDecorator
+            WebDriver driver = (WebDriver) target.getDecorator().getDecoratedDriver().getOriginal();
+
+            //Now jumping into another interface(JavaScriptExecutor) from WebDriver(Interface)
+            ((JavascriptExecutor) driver).executeScript("arguments[0].setAttribute('style', " + "'background: yellow')", ((WebElement) res));
+
+            File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            try {
+                FileUtils.copyFile(file, new File("./snaps/snap" + i + ".jpg"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            i++;
+        }
+    }
+
+    public void highlightElement(WebElement element, int duration) {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        String original_style = element.getAttribute("style");
+
+        js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])",
+                element,
+                "style",
+                "border: 3px solid red; border-style: solid;");
+
+        if (duration > 0) {
+            try {
+                Thread.sleep(duration * 1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])",
+                    element,
+                    "style",
+                    original_style);
+        }
+    }
+
 }

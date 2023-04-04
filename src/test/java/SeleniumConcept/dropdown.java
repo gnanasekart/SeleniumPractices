@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -36,6 +37,7 @@ public class dropdown {
     WebDriver driver;
     @BeforeMethod
     public void startUp() {
+
         WebDriverManager.chromiumdriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -57,7 +59,7 @@ public class dropdown {
 
     @Test(priority = 1, dependsOnMethods = "selectTool")
     public void clickByTag() throws IOException {
-        //Dropdown is not configured as select. Hence two clicks are expected
+        //Dropdown is not configured as select. Hence, two clicks are expected
         driver.findElement(By.xpath("//label[text()='Select Country']")).click();
         driver.findElement(By.xpath("//li[text()='India']")).click();
         WebElement box = driver.findElement(By.xpath("//h5[contains(text(), 'Choose your preferred country')]/parent::div"));

@@ -22,7 +22,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LoginSccenario {
+public class LoginScenario {
 
     public static void main(String[] args) throws IOException, ExecutionException, InterruptedException {
 

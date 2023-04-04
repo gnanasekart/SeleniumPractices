@@ -36,7 +36,7 @@ public class NewTest {
 //		System.out.println("Second method = "+Thread.currentThread().hashCode());
 	}
 
-	//@Test(threadPoolSize = 2, invocationCount = 4, timeOut = 2000)
+	@Test(threadPoolSize = 2, invocationCount = 4, timeOut = 2000)
 	public void Third() {
 		System.out.println("Third method = "+Thread.currentThread().getId());
 //		System.out.println("Third method = "+Thread.currentThread().getName());
