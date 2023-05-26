@@ -42,7 +42,6 @@ public class HyperLinkTest {
 	//@Test
 	public void duplicateLink() {
 		List<WebElement> url = driver.findElements(By.xpath("//*[@href='/dashboard.xhtml'][@class='ui-link ui-widget']"));
-
 		Assert.assertEquals(url.size(), 2);
 	}
 
@@ -54,7 +53,7 @@ public class HyperLinkTest {
 	}
 	
 	@Test
-	public void totaLayoutlLink() {
+	public void totalLayoutLink() {
 		driver.findElement(By.linkText("How many links in this layout?")).click();
 		
 		//boolean ele = driver.findElement(By.tagName("a")).getAttribute("href");
@@ -63,7 +62,6 @@ public class HyperLinkTest {
 		int aTagLinkCount = driver.findElements(By.xpath("//a[contains(@href, 'html')]")).size();
 		System.out.println("total html links = "+htmlCount+", and which include <a> tag links are = "+aTagLinkCount);
 	}
-	//
 
 	@AfterMethod
 	public void afterMethod() {

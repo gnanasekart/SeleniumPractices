@@ -22,7 +22,7 @@ public class googleSearch {
 
 		driver.get("https://www.google.com/");
 		driver.findElement(By.cssSelector("[name='q']")).sendKeys("testing");
-		 WebElement ele = driver.findElement(By.xpath("//ul[@role=\"listbox\"]//li/following::div[@class='wM6W7d']//b[contains(text(),'courses')]"));
+		WebElement ele = driver.findElement(By.xpath("//ul[@role=\"listbox\"]//li/following::div[@class='wM6W7d']//b[contains(text(),'courses')]"));
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", ele);

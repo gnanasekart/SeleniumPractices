@@ -23,7 +23,6 @@
 //		driver.get("https://www.facebook.m/");
 //		WebElement locator = driver.findElement(By.cssSelector("input[value='Log In']"));
 //		exClickOn(driver, 20, locator);
-//
 //	}
 //
 //	@AfterMethod
